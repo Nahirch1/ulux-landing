@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; background: #090909; }
+body { margin: 0; background: #090909; color: #fff; font-family: Arial, Helvetica, sans-serif; }
+a { transition: color .25s ease; }
+::selection { background: #D3A13B; color: #090909; }
+
+.section-shell { @apply mx-auto w-full max-w-7xl px-5 lg:px-8; }
+.eyebrow { @apply mb-5 text-xs uppercase tracking-[0.24em] text-gold; }
+.section-title { @apply text-4xl font-medium leading-[1.03] tracking-[-0.04em] sm:text-5xl lg:text-6xl; }
+
+.btn-gold { @apply relative inline-flex min-h-12 items-center justify-center gap-3 overflow-hidden rounded-full bg-gold px-6 py-3 text-sm font-semibold text-black transition duration-300 hover:scale-[1.035] hover:bg-gold-soft hover:shadow-gold active:scale-[.98]; }
+.btn-ghost { @apply inline-flex min-h-12 items-center justify-center gap-3 rounded-full border border-white/20 bg-black/20 px-6 py-3 text-sm text-white backdrop-blur transition duration-300 hover:scale-[1.035] hover:border-gold/70 hover:bg-white/5; }
+.nav-link { @apply relative py-2 transition hover:text-white; }
+.nav-link::after { content: ''; @apply absolute bottom-0 left-0 h-px w-0 bg-gold transition-all duration-300; }
+.nav-link:hover::after { @apply w-full; }
+
+.service-card { @apply relative min-h-[310px] bg-carbon p-7 transition duration-500 hover:-translate-y-1 hover:bg-panel sm:p-9; }
+.service-card::after { content: ''; @apply absolute bottom-0 left-0 h-[2px] w-0 bg-gold transition-all duration-500; }
+.service-card:hover::after { @apply w-full; }
+
+.project-card { @apply relative min-h-[280px] overflow-hidden rounded-[24px] border border-white/10 text-left transition duration-300 hover:-translate-y-1 hover:border-gold/35; }
+.modal-arrow { @apply rounded-full border border-white/15 p-3 transition hover:scale-110 hover:border-gold hover:text-gold; }
+.contact-line { @apply flex max-w-md items-center gap-4 border-b border-white/10 py-4 text-white/70 transition hover:border-gold/50 hover:text-white; }
+.contact-line svg:last-child { @apply ml-auto transition; }
+.contact-line:hover svg:last-child { @apply translate-x-1 text-gold; }
+.field-label { @apply flex flex-col gap-2 text-sm text-white/65; }
+.field-input { @apply w-full rounded-2xl border border-white/10 bg-ink px-4 py-3.5 text-white outline-none transition placeholder:text-white/25 focus:border-gold/70 focus:ring-2 focus:ring-gold/10; }
+.field-input option { background: #111; }
+.floating-link { @apply flex h-12 w-12 items-center justify-center rounded-full border border-white/15 bg-carbon/90 text-white shadow-lg backdrop-blur transition duration-300 hover:scale-110 hover:border-gold hover:text-gold; }
+.floating-whatsapp { @apply flex h-14 w-14 items-center justify-center rounded-full bg-gold text-black shadow-gold transition duration-300 hover:scale-110 hover:bg-gold-soft; }
