@@ -729,41 +729,8 @@ export function LandingPage() {
         </div>
       </section>
 
-      {/* CTA FINAL */}
-      <section
-        id="contacto"
-        className="border-t border-white/10 bg-carbon py-16"
-      >
-        <div className="section-shell flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
-          <div>
-            <div className="flex items-center gap-3 text-gold">
-              <Sparkles size={18} />
-              <span className="text-xs uppercase tracking-[0.2em]">
-                Hablemos de tu proyecto
-              </span>
-            </div>
-
-            <h2 className="mt-5 max-w-3xl text-4xl font-medium tracking-[-0.04em] sm:text-5xl">
-              Hagamos realidad tu proyecto.
-            </h2>
-          </div>
-
-          <MagneticButton>
-            <a
-              className="btn-gold shrink-0"
-              href={whatsappHref()}
-              target="_blank"
-              rel="noreferrer"
-            >
-              Contactar
-              <ArrowRight size={18} />
-            </a>
-          </MagneticButton>
-        </div>
-      </section>
-
       {/* FOOTER */}
-      <footer className="border-t border-white/10 bg-ink py-10">
+      <footer id="contacto" className="border-t border-white/10 bg-ink py-10">
         <div className="section-shell flex flex-col gap-8 text-sm text-white/45 md:flex-row md:items-center md:justify-between">
           <div>
             <span className="font-medium tracking-[0.18em] text-white">
